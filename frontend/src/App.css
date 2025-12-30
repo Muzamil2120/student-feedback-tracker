@@ -16,6 +16,15 @@
   color: var(--text);
 }
 
+.alert {
+  padding: 12px 12px;
+  border-radius: 12px;
+  background: rgba(220, 38, 38, 0.08);
+  border: 1px solid rgba(220, 38, 38, 0.25);
+  color: #991b1b;
+  font-size: 14px;
+}
+
 form {
   display: grid;
   gap: 12px;
@@ -63,6 +72,11 @@ button {
 
 button:hover {
   background: var(--primary-hover);
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 button:active {
